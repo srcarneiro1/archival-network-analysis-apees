@@ -1,44 +1,84 @@
-# Archival Network Analysis - APEES
+# Archival Network Analysis — APEES
 
-Este repositório contém dados, scripts e documentação relacionados ao estudo "A manutenção do vínculo arquivístico e do vínculo informacional a partir da análise de redes de informação: um estudo aplicado no acervo histórico de inquéritos policiais do Arquivo Público do Estado do Espírito Santo - APEES".
+**PT-BR** | [English](#english)
 
-## Conteúdo do Repositório
+## Sobre a pesquisa
 
-Os dados que constam neste repositório pertencem ao estudo de caso do APEES. A fonte de informação está no documento em formato `.xlsx` nomeado **"[Base de dados] APEES Fundo Inqueritos Policiais [possui código GML e tabela do vocabulário controlado]"**, que contém várias abas:
-- **Base de Dados Final dos Inquéritos**: Dados finais utilizados para a análise.
-- **Padronização de Termos**: Tabela contendo o padronização terminológica utilizado no estudo.
-- **GML**: Código GML relevante para a análise de redes.
+Este repositório reúne materiais de pesquisa associados ao estudo **“A manutenção do vínculo arquivístico e do vínculo informacional a partir da análise de redes de informação: um estudo aplicado no acervo histórico de inquéritos policiais do Arquivo Público do Estado do Espírito Santo — APEES”**.
 
-Além da base de dados, o repositório inclui os arquivos do GEPHI nas suas versões desenvolvidas.
+O acervo de trabalho inclui uma planilha de dados, arquivos de redes e diferentes versões de projetos do Gephi, além de um arquivo de projeto do OpenRefine. A documentação descreve os materiais disponibilizados, sem afirmar que os resultados são integralmente reproduzíveis apenas com estes arquivos.
 
-## Estrutura do Repositório
+## Materiais disponíveis
 
+Os arquivos estão **na raiz do repositório**, e não em uma pasta `data/`.
+
+| Arquivo ou grupo | Formato | Finalidade |
+| --- | --- | --- |
+| `[Base de dados] APEES Fundo Inqueritos Policiais [possuí código GML e tabela do vocabulário controlado].xlsx` | XLSX | Planilha de dados da pesquisa, com abas descritas na documentação original como base final dos inquéritos, padronização de termos e GML |
+| `Rede de Inquéritos.gml` | GML | Representação de rede para análise em ferramentas compatíveis |
+| `Rede de Inquéritos.txt` | TXT | Arquivo textual relacionado à rede |
+| `Rede de Inquéritos.gephi`, `Rede de Inquéritos_v2.gephi`, `Rede de Inquéritos_v3.gephi` a `Rede de Inquéritos_v7.gephi` | GEPHI | Versões dos projetos de análise e visualização de redes |
+| `Rede de Inquéritos [vitima-acusado].gephi` | GEPHI | Projeto identificado pelo recorte vítima–acusado no nome do arquivo |
+| `APEES-Fundo-Inqueritos-Policiais-[final]-xlsx.openrefine.tar.gz` | TAR.GZ | Arquivo de projeto associado ao OpenRefine |
+
+> Os nomes e extensões acima refletem os arquivos existentes no repositório. A descrição das abas da planilha deriva do README anterior e não substitui a conferência direta dos dados.
+
+## Acesso e exploração
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/srcarneiro1/archival-network-analysis-apees.git
+cd archival-network-analysis-apees
 ```
-archival-network-analysis-apees/
-│
-├── data/
-│   ├── APEES-Fundo-Inqueritos-Policiais-[final]-xlsx.openrefine.tar.gz
-│   ├── [Base de dados] APEES Fundo Inqueritos Policiais [possuí código GML e tabela do vocabulário controlado].xlsx
-│   ├── Rede de Inquéritos.txt
-│   ├── Rede de Inquéritos.gml
-│   ├── Rede de Inquéritos [vitima-acusado].gephi
-│   ├── Rede de Inquéritos.gephi
-│   ├── Rede de Inquéritos_v2.gephi
-│   ├── Rede de Inquéritos_v3.gephi
-│   ├── Rede de Inquéritos_v4.gephi
-│   └── Rede de Inquéritos_v5.gephi
-│
-└── README.md
+
+- **Planilha:** abra o arquivo `.xlsx` em um aplicativo compatível e examine as abas e seus dicionários ou padronizações disponíveis.
+- **Rede:** importe o arquivo `.gml` em uma ferramenta de análise de redes compatível, como o Gephi.
+- **Projetos:** abra os arquivos `.gephi` no Gephi, observando que diferentes versões podem representar etapas distintas do trabalho.
+- **Tratamento de dados:** consulte o arquivo de projeto do OpenRefine em ambiente compatível; a disponibilidade do arquivo não comprova, por si só, a reexecução integral das transformações.
+
+## Metodologia e reprodutibilidade
+
+Os materiais se relacionam à organização de dados arquivísticos, padronização terminológica e análise de redes de informação. Para reproduzir ou avaliar os resultados com rigor, consulte também a publicação acadêmica correspondente e verifique as definições de nós, arestas, relações, filtros, versões de software e procedimentos de tratamento de dados. Esses parâmetros **não estão integralmente documentados neste README**.
+
+## Uso responsável dos dados
+
+O acervo envolve registros históricos de inquéritos policiais. Antes de redistribuir, combinar ou reutilizar dados individualizados, avalie a proveniência, as condições de acesso, os direitos aplicáveis e eventuais implicações de privacidade. **Nenhuma licença de reutilização é declarada neste repositório por este README.**
+
+## Referência acadêmica
+
+Este repositório integra os materiais relacionados ao estudo indicado acima. A referência bibliográfica completa e o DOI da publicação devem ser acrescentados somente após conferência na fonte editorial.
+
+Endereço permanente de referência do repositório: https://github.com/srcarneiro1/archival-network-analysis-apees
+
+---
+
+<a id="english"></a>
+## English
+
+### Research overview
+
+This repository contains research materials associated with the study **“A manutenção do vínculo arquivístico e do vínculo informacional a partir da análise de redes de informação: um estudo aplicado no acervo histórico de inquéritos policiais do Arquivo Público do Estado do Espírito Santo — APEES.”**
+
+The repository includes a research spreadsheet (`.xlsx`), a network exchange file (`.gml`), text data (`.txt`), multiple Gephi project versions (`.gephi`), and an OpenRefine-related project archive (`.tar.gz`). All files are stored at the repository root.
+
+### Getting started
+
+```bash
+git clone https://github.com/srcarneiro1/archival-network-analysis-apees.git
+cd archival-network-analysis-apees
 ```
 
-## Como Utilizar
+Open the spreadsheet with a compatible application, inspect the GML network in a network-analysis tool such as Gephi, and open the Gephi project files to examine the saved project versions. The OpenRefine archive may require a compatible environment.
 
-1. **Clonar o Repositório**:
-   ```bash
-   git clone https://github.com/usuario/archival-network-analysis-apees.git
-   cd archival-network-analysis-apees
-   ```
+### Methods and reproducibility
 
-2. **Explorar os Dados**:
-   - Abra o arquivo `data/[Base de dados] APEES Fundo Inqueritos Policiais.xlsx` para acessar as diferentes abas com os dados dos inquéritos, vocabulário controlado e GML.
-   - Os arquivos GEPHI nas versões desenvolvidas estão disponíveis.
+The materials support the examination of archival records, terminology standardization, and information-network analysis. **Full computational reproducibility is not established by this README.** Consult the associated publication and verify node/edge definitions, filters, software versions, and data-processing procedures before drawing conclusions.
+
+### Responsible data use
+
+The dataset concerns historical police inquiry records. Review provenance, access conditions, applicable rights, and privacy implications before redistributing or reusing person-level data. This README does not grant a data-reuse license.
+
+### Academic citation
+
+A complete bibliographic reference and DOI should be added after verification against the publisher's record. The repository URL must remain unchanged because it is cited in academic work.
