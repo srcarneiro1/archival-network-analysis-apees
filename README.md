@@ -45,12 +45,6 @@ Os materiais se relacionam à organização de dados arquivísticos, padronizaç
 
 O acervo envolve registros históricos de inquéritos policiais. Antes de redistribuir, combinar ou reutilizar dados individualizados, avalie a proveniência, as condições de acesso, os direitos aplicáveis e eventuais implicações de privacidade. **Nenhuma licença de reutilização é declarada neste repositório por este README.**
 
-## Referência acadêmica
-
-Este repositório integra os materiais relacionados ao estudo indicado acima. A referência bibliográfica completa e o DOI da publicação devem ser acrescentados somente após conferência na fonte editorial.
-
-Endereço permanente de referência do repositório: https://github.com/srcarneiro1/archival-network-analysis-apees
-
 ---
 
 <a id="english"></a>
@@ -78,7 +72,3 @@ The materials support the examination of archival records, terminology standardi
 ### Responsible data use
 
 The dataset concerns historical police inquiry records. Review provenance, access conditions, applicable rights, and privacy implications before redistributing or reusing person-level data. This README does not grant a data-reuse license.
-
-### Academic citation
-
-A complete bibliographic reference and DOI should be added after verification against the publisher's record. The repository URL must remain unchanged because it is cited in academic work.
